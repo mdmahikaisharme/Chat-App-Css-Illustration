@@ -1,0 +1,33 @@
+.right {
+  width: 50%;
+  padding-right: 5rem;
+}
+
+.rightTitle {
+  font-size: 2.6rem;
+  font-weight: 600;
+  line-height: 2.5em;
+  color: var(--veryDarkDesaturatedViolet);
+}
+
+.rightDescribtion {
+  max-width: 50ch;
+  font-size: 1.05rem;
+  line-height: 1.7em;
+  color: var(--darkGrayishViolet);
+}
+
+@media (max-width: 1000px) {
+  .right {
+    width: 100%;
+    padding: 0 2rem 5rem;
+    text-align: center;
+  }
+  .rightTitle {
+    font-size: 2.25rem;
+  }
+  .rightDescribtion {
+    margin: 0 auto;
+    font-size: 1rem;
+  }
+}

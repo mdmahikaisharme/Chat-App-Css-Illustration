@@ -1,0 +1,44 @@
+:root {
+  --paleViolet: hsl(276, 100%, 81%);
+  --moderateViolet: hsl(276, 55%, 52%);
+  --desaturatedDarkViolet: hsl(271, 15%, 43%);
+  --grayishBlue: hsl(206, 6%, 79%);
+  --veryDarkDesaturatedViolet: hsl(271, 36%, 24%);
+  --darkGrayishViolet: hsl(270, 7%, 64%);
+  --lightMagenta: hsl(293, 100%, 63%);
+  --lightViolet: hsl(264, 100%, 61%);
+  --white: hsl(0, 0%, 100%);
+  --lightGrayishViolet: hsl(270, 20%, 96%);
+  --veryLightMagenta: hsl(289, 100%, 72%);
+  --gap0-5: 0.5rem;
+  --gap1: 1rem;
+  --gap1-5: 1.5rem;
+  --gap2: 2rem;
+  --gap3: 3rem;
+  --gap4: 4rem;
+  --gap5: 5rem;
+  --icon: 0.75rem;
+  --avater: 1.7rem;
+  --mobileW: 240px;
+  --mobileH: 520px;
+  --mobileRadius: 1.5rem;
+  --mobileHead: 2rem;
+  --zIndex: 1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+button {
+  cursor: pointer;
+}

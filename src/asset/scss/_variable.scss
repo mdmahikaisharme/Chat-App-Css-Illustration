@@ -1,0 +1,49 @@
+:root {
+    // ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
+    // ----- ----- ----- ----- ----- Colour ----- ----- ----- -----
+    // ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
+    // #### Text
+    --paleViolet: hsl(276, 100%, 81%); // (sub-heading at the top of the app UI)
+    --moderateViolet: hsl(276, 55%, 52%); // (chat on the left)
+    --desaturatedDarkViolet: hsl(271, 15%, 43%); // (chat on the right)
+    --grayishBlue: hsl(206, 6%, 79%); // (placeholder text)
+    --veryDarkDesaturatedViolet: hsl(271, 36%, 24%); // (main heading)
+    --darkGrayishViolet: hsl(270, 7%, 64%); // (paragraph)
+
+    // #### Gradients
+    --lightMagenta: hsl(293, 100%, 63%);
+    --lightViolet: hsl(264, 100%, 61%);
+
+    // ### Secondary
+    --white: hsl(0, 0%, 100%);
+    --lightGrayishViolet: hsl(270, 20%, 96%); // (app background)
+    --veryLightMagenta: hsl(289, 100%, 72%); // (radio button outline)
+
+    // ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
+    // ----- ----- ----- ----- ----- Gap ----- ----- ----- -----
+    // ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
+    --gap0-5: 0.5rem;
+    --gap1: 1rem;
+    --gap1-5: 1.5rem;
+    --gap2: 2rem;
+    --gap3: 3rem;
+    --gap4: 4rem;
+    --gap5: 5rem;
+
+    // ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
+    // ----- ----- ----- ----- ----- Size ----- ----- ----- -----
+    // ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
+    --icon: 0.75rem;
+    --avater: 1.7rem;
+
+    // Mobile
+    --mobileW: 240px;
+    --mobileH: 520px;
+    --mobileRadius: 1.5rem;
+    --mobileHead: 2rem;
+
+    // ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
+    // ----- ----- ----- ----- ----- Z Index ----- ----- ----- -----
+    // ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
+    --zIndex: 1;
+}

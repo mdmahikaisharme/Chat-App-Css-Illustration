@@ -1,0 +1,10 @@
+@import "../../asset/scss/mixin";
+
+#root {
+    min-height: 100vh;
+    @include flex($ai: center, $jc: space-between);
+
+    @include medium() {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,73 @@
+@import "../../../asset/scss/mixin";
+
+.message {
+    width: fit-content;
+    max-width: 85%;
+    padding: 0.4rem 0.6rem 0.5rem;
+    font-size: 0.6rem;
+    background-color: hsla(276, 100%, 81%, 0.3);
+    color: var(--moderateViolet);
+    border-radius: 0.75rem;
+    border-bottom-left-radius: 0.25rem;
+
+    &ByMe {
+        align-self: flex-end;
+        background-color: var(--white);
+        color: var(--desaturatedDarkViolet);
+        border-bottom-left-radius: 0.75rem;
+        border-bottom-right-radius: 0.25rem;
+        box-shadow: 2.5px 2.5px 10px rgba(0, 0, 0, 0.075);
+    }
+
+    &Img,
+    &Radio {
+        padding: 0;
+        @include flex($gap: 0.5rem);
+        flex-wrap: wrap;
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    &Img {
+        img {
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 0.75rem;
+        }
+    }
+
+    &Radio {
+        width: 100%;
+        flex-direction: column;
+
+        &Item {
+            width: 100%;
+            @include flex($ai: center, $gap: 0.5rem);
+            background-image: linear-gradient(
+                135deg,
+                var(--lightMagenta),
+                var(--lightViolet)
+            );
+            color: var(--white);
+
+            input[type="radio"] {
+                appearance: none;
+                flex: none;
+                width: 0.7rem;
+                height: 0.7rem;
+                display: block;
+                background-color: transparent;
+                border: 2px solid var(--veryLightMagenta);
+                border-radius: 50%;
+                transition: background-color 0.2s ease;
+
+                &:checked {
+                    background-color: var(--white);
+                }
+            }
+            p {
+                flex-grow: 1;
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+@import "../../asset/scss/mixin";
+
+.right {
+    width: 50%;
+    padding-right: 5rem;
+
+    &Title {
+        font-size: 2.6rem;
+        font-weight: 600;
+        line-height: 2.5em;
+        color: var(--veryDarkDesaturatedViolet);
+    }
+    &Describtion {
+        max-width: 50ch;
+        font-size: 1.05rem;
+        line-height: 1.7em;
+        color: var(--darkGrayishViolet);
+    }
+
+    @include medium() {
+        width: 100%;
+        padding: 0 2rem 5rem;
+        text-align: center;
+
+        &Title {
+            font-size: 2.25rem;
+        }
+        &Describtion {
+            margin: 0 auto;
+            font-size: 1rem;
+        }
+    }
+}

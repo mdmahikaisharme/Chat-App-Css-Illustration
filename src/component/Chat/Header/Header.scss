@@ -1,0 +1,57 @@
+@import "../../../asset/scss/mixin";
+
+.header {
+    padding-top: calc(var(--mobileHead) * 0.5);
+    background-image: linear-gradient(
+        135deg,
+        var(--lightViolet),
+        var(--lightMagenta)
+    );
+    border-radius: 0 0 0.4rem 0.4rem;
+
+    &Hold {
+        padding: 0.75rem;
+        @include flex($ai: center, $gap: 0.5rem);
+    }
+
+    &Btn {
+        flex: none;
+        background: none;
+        border: none;
+        outline: none;
+        transition: transform 0.2s ease;
+
+        svg {
+            width: var(--icon);
+            height: var(--icon);
+            object-fit: contain;
+            fill: var(--white);
+        }
+
+        &:active {
+            transform: scale(1.25);
+        }
+    }
+
+    &User {
+        flex-grow: 1;
+        @include flex($ai: center, $gap: 0.5rem);
+    }
+
+    &Avater {
+        width: var(--avater);
+        height: var(--avater);
+        border-radius: var(--avater);
+        border: 2px solid var(--white);
+    }
+    &Name {
+        font-size: 0.8rem;
+        font-weight: 700;
+        color: var(--white);
+    }
+    &Available {
+        font-size: 0.5rem;
+        font-weight: 600;
+        color: var(--paleViolet);
+    }
+}

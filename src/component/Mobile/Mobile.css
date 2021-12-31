@@ -1,0 +1,34 @@
+.mobile {
+  width: var(--mobileW);
+  height: var(--mobileH);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: var(--lightGrayishViolet);
+  border-radius: var(--mobileRadius);
+  overflow: hidden;
+}
+
+.mobileOuter {
+  min-width: calc(var(--mobileW) + 1.1rem);
+  min-height: calc(var(--mobileH) + 1.1rem);
+  position: relative;
+  background-color: var(--white);
+  border-radius: calc(var(--mobileRadius) + 0.5rem);
+  -webkit-box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+          box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+}
+
+.mobileHead {
+  width: calc(var(--mobileW) * 0.5);
+  height: var(--mobileHead);
+  position: absolute;
+  left: 50%;
+  top: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: var(--white);
+  border-radius: calc(var(--mobileRadius) * 0.45);
+}

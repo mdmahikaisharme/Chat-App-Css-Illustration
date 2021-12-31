@@ -1,0 +1,46 @@
+@import "../../../asset/scss/mixin";
+
+.writeMessage {
+    height: 100%;
+    padding: 0.75rem;
+
+    &Form {
+        width: 100%;
+        padding: 0.25rem;
+        @include flex($ai: center, $gap: 0.5rem);
+        background-color: var(--white);
+        border-radius: 2rem;
+        overflow: hidden;
+    }
+    &Input {
+        flex-grow: 1;
+        padding-left: 0.75rem;
+        font-size: 0.6rem;
+        background: none;
+        color: var(--desaturatedDarkViolet);
+        border: none;
+        outline: none;
+    }
+    &Send {
+        --size: calc(var(--icon) + 0.75rem);
+        flex: none;
+        width: var(--size);
+        height: var(--size);
+        background-color: var(--veryDarkDesaturatedViolet);
+        border: none;
+        outline: none;
+        transition: transform 0.2s ease;
+        border-radius: var(--size);
+
+        svg {
+            width: var(--icon);
+            height: var(--icon);
+            object-fit: contain;
+            fill: var(--white);
+        }
+
+        &:active {
+            transform: scale(1.25);
+        }
+    }
+}

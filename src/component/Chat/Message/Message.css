@@ -1,0 +1,90 @@
+.message {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 85%;
+  padding: 0.4rem 0.6rem 0.5rem;
+  font-size: 0.6rem;
+  background-color: rgba(216, 158, 255, 0.3);
+  color: var(--moderateViolet);
+  border-radius: 0.75rem;
+  border-bottom-left-radius: 0.25rem;
+}
+
+.messageByMe {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  background-color: var(--white);
+  color: var(--desaturatedDarkViolet);
+  border-bottom-left-radius: 0.75rem;
+  border-bottom-right-radius: 0.25rem;
+  -webkit-box-shadow: 2.5px 2.5px 10px rgba(0, 0, 0, 0.075);
+          box-shadow: 2.5px 2.5px 10px rgba(0, 0, 0, 0.075);
+}
+
+.messageImg, .messageRadio {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.5rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.messageImg img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.75rem;
+}
+
+.messageRadio {
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.messageRadioItem {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+  background-image: linear-gradient(135deg, var(--lightMagenta), var(--lightViolet));
+  color: var(--white);
+}
+
+.messageRadioItem input[type="radio"] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  width: 0.7rem;
+  height: 0.7rem;
+  display: block;
+  background-color: transparent;
+  border: 2px solid var(--veryLightMagenta);
+  border-radius: 50%;
+  -webkit-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+
+.messageRadioItem input[type="radio"]:checked {
+  background-color: var(--white);
+}
+
+.messageRadioItem p {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}

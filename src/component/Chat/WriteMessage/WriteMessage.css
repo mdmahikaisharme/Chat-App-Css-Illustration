@@ -1,0 +1,61 @@
+.writeMessage {
+  height: 100%;
+  padding: 0.75rem;
+}
+
+.writeMessageForm {
+  width: 100%;
+  padding: 0.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+  background-color: var(--white);
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.writeMessageInput {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding-left: 0.75rem;
+  font-size: 0.6rem;
+  background: none;
+  color: var(--desaturatedDarkViolet);
+  border: none;
+  outline: none;
+}
+
+.writeMessageSend {
+  --size: calc(var(--icon) + 0.75rem);
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  width: var(--size);
+  height: var(--size);
+  background-color: var(--veryDarkDesaturatedViolet);
+  border: none;
+  outline: none;
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+  border-radius: var(--size);
+}
+
+.writeMessageSend svg {
+  width: var(--icon);
+  height: var(--icon);
+  -o-object-fit: contain;
+     object-fit: contain;
+  fill: var(--white);
+}
+
+.writeMessageSend:active {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+}
